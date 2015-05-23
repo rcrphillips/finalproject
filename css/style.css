@@ -1,0 +1,22 @@
+body{
+	line-height: 1.4;
+}
+
+.container{
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+header{
+	margin: 0 auto;
+	max-width: 50%;
+	text-align: center;
+}
+
+article{
+	max-width: 40%;
+}
+
+article img{
+	max-width: 100%;
+}
