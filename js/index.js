@@ -24,3 +24,11 @@ function createItem(){
 	$('article p').text(resultStandfirst)
 	$('button a').attr('href', resultURL);
 }
+
+// Work out how to separate each result
+// Push each result into an array
+// Work out how to create a new item
+//Foreach result, grab the required fields/?
+//How to load on scroll?
+//http://api.jquery.com/jquery.getjson/
+//Ajax or getJson?

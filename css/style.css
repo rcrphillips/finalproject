@@ -20,3 +20,28 @@ article{
 article img{
 	max-width: 100%;
 }
+
+/*attempt to wrap list items*/
+
+ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+    width: 25%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+ 
+ul li:first-child {
+    border-left: none;
+}
+
+ul li img{
+	width: 100%;
+}
