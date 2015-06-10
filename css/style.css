@@ -14,11 +14,31 @@ header{
 }
 
 article{
-	max-width: 40%;
+	max-width: 45%;
+    transition: all 400ms ease;
+    border-bottom: 2px solid black;
+}
+
+article:nth-child(odd){
+    float: right;
+    clear: both;
+}
+
+article:nth-child(even){
+    float: left;
+    clear: left;
 }
 
 article img{
 	max-width: 100%;
+}
+
+article h2{
+    /*background: orange;*/
+}
+
+article:hover{
+    transform: scale(1.02);
 }
 
 /*attempt to wrap list items*/
@@ -44,4 +64,22 @@ ul li:first-child {
 
 ul li img{
 	width: 100%;
+}
+
+/*Media queries to do:*/
+
+@media screen and (max-width: 480px){
+    ul li{
+        width: 33%;
+    }
+    ul li img{
+        /*max-height: 100px;*/
+    }
+    article{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    article:nth-child(odd){
+    float: none;
+    }
 }

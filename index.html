@@ -20,72 +20,96 @@
 		</header>
 			
 			<ul>
-				<li><img src="img/Crests/arsenal.png" alt=""></li>
-				<li><img src="img/Crests/aston-villa.png" alt=""></li>
-				<li><img src="img/Crests/burney.png" alt=""></li>
-				<li><img src="img/Crests/chelsea.png" alt=""></li>
-				<li><img src="img/Crests/crystal-palace-fc.png" alt=""></li>
-				<li><img src="img/Crests/everton-fc.png" alt=""></li>
-				<li><img src="img/Crests/hull-city-afc.png" alt=""></li>
-				<li><img src="img/Crests/leicester-city-fc.png" alt=""></li>
-				<li><img src="img/Crests/liverpool.png" alt=""></li>
-				<li><img src="img/Crests/manchester-city.png" alt=""></li>
-				<li><img src="img/Crests/manchester-united.png" alt=""></li>
-				<li><img src="img/Crests/newcastle-united.png" alt=""></li>
-				<li><img src="img/Crests/queens-park-rangers.png" alt=""></li>
-				<li><img src="img/Crests/southampton-fc.png" alt=""></li>
-				<li><img src="img/Crests/stoke-city.png" alt=""></li>
-				<li><img src="img/Crests/sunderland.png" alt=""></li>
-				<li><img src="img/Crests/swansea-city-afc.png" alt=""></li>
-				<li><img src="img/Crests/tottenham-hotspur.png" alt=""></li>
-				<li><img src="img/Crests/west-bromwich-albion.png" alt=""></li>
-				<li><img src="img/Crests/west-ham.png" alt=""></li>
+				<li><img src="img/Crests/arsenal.png" alt="" id="arsenal"></li>
+				<li><img src="img/Crests/aston-villa.png" alt="" id="aston-villa"></li>
+				<li><img src="img/Crests/burney.png" alt="" id="burnley"></li>
+				<li><img src="img/Crests/chelsea.png" alt="" id="chelsea"></li>
+				<li><img src="img/Crests/crystal-palace-fc.png" alt="" id="crystalpalace"></li>
+				<li><img src="img/Crests/everton-fc.png" alt="" id="everton"></li>
+				<li><img src="img/Crests/hull-city-afc.png" alt="" id="hullcity"></li>
+				<li><img src="img/Crests/leicester-city-fc.png" alt="" id="leicestercity"></li>
+				<li><img src="img/Crests/liverpool.png" alt="" id="liverpool"></li>
+				<li><img src="img/Crests/manchester-city.png" alt="" id="manchestercity"></li>
+				<li><img src="img/Crests/manchester-united.png" alt="" id="manchester-united"></li>
+				<li><img src="img/Crests/newcastle-united.png" alt="" id="newcastleunited"></li>
+				<li><img src="img/Crests/queens-park-rangers.png" alt="" id="qpr"></li>
+				<li><img src="img/Crests/southampton-fc.png" alt="" id="southampton"></li>
+				<li><img src="img/Crests/stoke-city.png" alt="" id="stokecity"></li>
+				<li><img src="img/Crests/sunderland.png" alt="" id="sunderland"></li>
+				<li><img src="img/Crests/swansea-city-afc.png" alt="" id="swansea"></li>
+				<li><img src="img/Crests/tottenham-hotspur.png" alt="" id="tottenham-hotspur"></li>
+				<li><img src="img/Crests/west-bromwich-albion.png" alt="" id="westbrom"></li>
+				<li><img src="img/Crests/west-ham.png" alt="" id="westhamunited"></li>
 			</ul>
 
 
-		<article>
-			<img src="img/.png"  alt="test">
-			<h1 class="headline">Liverpool lose to Crystal Palace on Gerrard's Anfield farewell</h1>
-			<p class="standfirst">Palace came and spoilt the party on the last of Gerrard's home games for Liverpool. Goals from Puncheon, Zaha and Murray made for a comprehensive victory for the Londoners after Lallana had initially given Liverpool the lead.</p>
-			<button><a href="">Read More...</a></button>
-		</article>
+			<article><a href="www.google.com"><img src="img/bg.png" alt="">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique voluptatibus harum impedit, ratione deserunt blanditiis maiores quo nostrum numquam officia consequuntur placeat deleniti, labore perspiciatis, dicta in, repellendus id voluptatem!</p>
+					</img></a></article>
+
+			<h1>
+				To Do
+			</h1>
+			Normalize
+			Grunt?
+			Minify JS
+			CSS
+			Headings from Json:
+			Image/Headline/List of teams/Link/Standfirst/Trail
+			Animate items 
+			Mustache API
+
+
+
+			<h1>
+				Steps
+			</h1>
+			Pages - Index and About - Probably single page :Loading times an issue? Optimise
+			Define structure for each item
+			Select Menu with dropdown of teams? Or Club logos displayed?
+			Each club passes a variable of the mapping to the API query
+			The request goes off: Loading animation
+			Items come back as single objects with the structure of something like:
+			div>img>H1.headline>p.standfirst>button(more)
+
+
+			<h1>
+				To Think about:
+			</h1>
+			How to display all items:
+			Carousel? Long list of connected items e.g. beads?
+
+
+			<h1>
+				UPDATE - 01/06/15
+			</h1>
+			<ul>
+				<li>Annotate each line of working JS with what it does &#10003;</li>
+				<li>id on click of arsenal is working for 'this'</li>
+				<li>Image populated from api</li>
+				<li>Need to style up each item</li>
+				<li><a href="https://api.jquery.com/jQuery.inArray/">Need to get correct image sizes by looping through array -</a></li>
+				<li>Find standfirst - hovering over nodes in chrome shows API path</li>
+				<li>Get teamnames as tags and make them ids on images &#10003;</li>
+				<li>Pass teamname into api search and search on click  ----   <a href="http://smallenvelop.com/display-loading-icon-page-loads-completely/">Possible place for a loading animation?</a> </li>
+				<li>Mustache JS for creating items?</li>
+			</ul>
+			
+			<h1>Update 08-06-15</h1>
+			<ul>
+				<li>Add standfirst to query and pull out from response</li>
+				<li>Dates to search</li>
+				<li>Loading animation? - put the event on the click?</li>
+				<li>Media queries</li>
+				<li>Each article has href to content?</li>
+			</ul>
+			<div id="results"></div>
 	</div>
 
-		
+	
 
 
-
-
-		<h1>
-			To Do
-		</h1>
-		Normalize
-		Grunt?
-		Minify JS
-		CSS
-		Headings from Json:
-		Image/Headline/List of teams/Link/Standfirst/Trail
-		Animate items 
-
-
-
-		<h1>
-			Steps
-		</h1>
-		Pages - Index and About - Probably single page :Loading times an issue? Optimise
-		Define structure for each item
-		Select Menu with dropdown of teams? Or Club logos displayed?
-		Each club passes a variable of the mapping to the API query
-		The request goes off: Loading animation
-		Items come back as single objects with the structure of something like:
-		div>img>H1.headline>p.standfirst>button(more)
-
-
-		<h1>
-			To Think about:
-		</h1>
-		How to display all items:
-		Carousel? Long list of connected items e.g. beads?
+		<script src="js/config.js"></script>
 		<script src="js/jquery.js"></script>
 		<script src="js/index.js"></script>
 	</body>
