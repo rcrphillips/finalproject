@@ -87,11 +87,10 @@ a{
     ul li img{
         /*max-height: 100px;*/
     }
-    article{
+    article:nth-child(odd), article:nth-child(even){
         max-width: 90%;
         margin: 0 auto;
+        float: none;
     }
-    article:nth-child(odd){
-    float: none;
-    }
+
 }
