@@ -22,7 +22,6 @@ var TeamLoader = function () {
 				//from each result item, the function calls createArticle with each individual resultItem
 				createArticle(resultItem);
 
-			console.log(json);
 			});	
 
 		}).done( function(){

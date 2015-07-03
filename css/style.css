@@ -28,7 +28,7 @@ header{
 /* close commented backslash hack */
 
 
-h2{
+h1, h2{
     padding: 10px;
     margin-bottom: 0;
     /*font-family: 'Lato', sans-serif;*/
@@ -55,7 +55,7 @@ article:nth-child(even){
 
 article h2{
     max-width: 100%;
-    min-height: 66px;
+    height: 66px;
 }
 
 article img{
@@ -171,27 +171,22 @@ a{
     }
 
     ul li{
-        max-width: 25%;
+        max-width: 20%;
     }
 
-    ul li:nth-child(4n+1){
+    ul li:nth-child(5n+1){
         clear: both;
-    }
-
-    ul li:nth-child(11){
-        clear: none;
-    }
-
-    ul li img{
-        /*max-height: 100px;*/
-    }
-    article:nth-child(odd), article:nth-child(even){
-        max-width: 90%;
-        margin: 0 auto;
-        float: none;
     }
 }
 
-@media screen and (max-width: 600px){
-    
+@media screen and (max-width: 700px){
+    article:nth-child(odd), article:nth-child(even){
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+    }
+    article h2{
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
 }
