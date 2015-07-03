@@ -39,6 +39,7 @@ var TeamLoader = function () {
 			var biggestImageIndex;
 			var biggestImageWidth = 0;
 
+			//looks for the biggest image possible by comparing the value for each item
 			element.assets.forEach(function(asset, index) {
 				if(asset.typeData.width > biggestImageWidth) {
 					biggestImageWidth = asset.typeData.width;
@@ -46,6 +47,7 @@ var TeamLoader = function () {
 				} 
 			});
 
+			//grabs the array position and inserts it to set the image 
 			resultItem.thumbnail = element.assets[biggestImageIndex].file;
 		});
 
@@ -60,17 +62,20 @@ var TeamLoader = function () {
 		$('#results').append(Mustache.to_html(template, resultItem));
 	};
 
+	//On scroll, this gets called in order to load the extra results
 	function loadMore(){
 		page++;
 		return getTeam();
 
 	}
 
+	//sets the colours from the click function below
 	function setColours (main, secondary) {
 		mainColour = main;
 		secondaryColour = secondary;
 	}
 
+	//resets the page counter when a new team is cliscked on so that it doesn't load the page value from the number of scrolls
 	function resetPage (page) {
 		page = page;
 	}
@@ -87,14 +92,16 @@ var TeamLoader = function () {
 
 $(document).ready(function() {
 
+	// creates a new intance of the teamloader function 
 	var teamLoader = new TeamLoader();
 
+	//sets a waypoint which is just below the results div
 	var waypoint = new Waypoint({
 		element: $('#bottom'),
 		handler: function(direction) {
 	  		if (direction === 'down') {
-	  			console.log('triggered');
 	  			teamLoader.loadMore().done(function () {
+	  				//this resets the waypoint so that it takes into account the new height of the results div when items are loaded
 	  				Waypoint.refreshAll();
 	  			});
 	  		};	
